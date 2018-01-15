@@ -35,16 +35,33 @@
   </head>
 
   <body>
-    <h1>Background Color Changer</h1>
+    <h1>MTG Card Finder</h1>
     <div id="container">
-      <span>Choose a color</span>
-      <select id="dropdown">
-        <option selected disabled hidden value=''></option>
-        <option value="white">White</option>
-        <option value="pink">Pink</option>
-        <option value="green">Green</option>
-        <option value="yellow">Yellow</option>
-      </select>
+		<span>Enter Card Name:</span>
+      
+		<input type="text" id="GivenCardName" value="" autocomplete="off" placeholder="ex: Path to Exile">
+	  
+		<script>
+
+		//Detects when the user presses return
+		document.getElementById('GivenCardName').onkeypress = function(e) {
+			var event = e || window.event;
+			var charCode = event.which || event.keyCode;
+			
+			if ( charCode == '13' ) {
+				// Enter pressed
+				console.log("Enter Pressed")
+            return false;
+            }
+         }
+		 
+		 //Does the card search and opens card in new tab
+		 function CardSearch(){
+			var GrabbedCardName = document.getElementById("GivenCardName").value;
+			//Still gotta finish this
+		 }
+	  </script>
+	  
     </div>
   </body>
 </html>

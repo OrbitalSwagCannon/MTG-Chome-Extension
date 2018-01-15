@@ -1,1 +1,1 @@
-Hello world! Building something fun as my first project. Since some friends and I play Magic the Gathering, maybe make something MTG related.
+Hello world! Building something fun as my first Chrome extension. Since some friends and I play Magic the Gathering, maybe make something MTG related.
